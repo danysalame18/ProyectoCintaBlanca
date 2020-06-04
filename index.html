@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+        <div>
+            <img class="logo" src="logo.png">
+        </div>
+
+       <div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-search-plus"></i></a>
+                    </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Contacto
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <p>
+                                Horario de Atencion de 9am a 6pm
+                              </p>
+                              <p class="mb-0">
+                                Telefono 55-4110-9490
+                              </p>
+                              <p class="mb-0">
+                                eMail danysalame18@gmail.com
+                              </p>
+                            </div>
+                <li>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Mi Cuenta
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <form class="px-4 py-3">
+                            <div class="form-group">
+                              <label for="exampleDropdownFormEmail1">Email</label>
+                              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleDropdownFormPassword1">Contraseña</label>
+                              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                <label class="form-check-label" for="dropdownCheck">
+                                  Recordarme
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                          </form>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Eres nuevo?? Registrate</a>
+                          <a class="dropdown-item" href="#">Olvidaste tu contraseña??</a>
+                        </div> 
+                    </div>
+                  </li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <div class="sticky-top">
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Promociones</a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Jerseys</a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gorras</a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sudaderas</a>
+                </li>
+            <!--<li class="nav-item">
+                <a class="nav-link" href="#">Accesorios</a>
+                </li>-->
+            <li class="nav-item">
+                <a class="nav-link" href="#">Carrito</a>
+                </li>
+        </ul>
+        </div>
+
+
+        <!--Promociones-->
+        <div class="container">
+           <div class="row">
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Dia del Padre</div>
+            <div class="card-body">
+              <h5 class="card-title">Obten un 5% de descuento</h5>
+              <p class="card-text">Usa el codigo 1234 para hacer valido tu cupon</p>
+            </div>
+          </div>
+
+          <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+            <div class="card-header">Inicio de Temporada</div>
+            <div class="card-body">
+              <h5 class="card-title">Obten $100 de descuento</h5>
+              <p class="card-text">Usa el codigo 3456 para hacer valido tu cupon</p>
+            </div>
+          </div>
+
+          <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+            <div class="card-header">Para que te animes</div>
+            <div class="card-body">
+              <h5 class="card-title">Obten un 3% de descuento</h5>
+              <p class="card-text">Usa el codigo 6789 para hacer valido tu cupon</p>
+            </div>
+          </div>
+        </div>
+        </div>
+            <!--Jerseys-->
+    <div>
+        <h1 class="titulos">Jerserys</h1>
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col mb-3">
+              <div class="card">
+                <img src="lve.jpg" class="card-img-top jerseyImagenes" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jersey Leighton Vander Esch</h5>
+                  <p class="card-text">$119.99</p>
+                  <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="cooper.jpg" class="card-img-top jerseyImagenes" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jersey Amari Cooper</h5>
+                  <p class="card-text">$119.99</p>
+                  <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="jsmith.jpg" class="card-img-top jerseyImagenes" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jersey Jaylon Smith</h5>
+                  <p class="card-text">$119.99</p>
+                  <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="prescott.jpg" class="card-img-top jerseyImagenes" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jersey Dak Prescott</h5>
+                  <p class="card-text">$129.99</p>
+                  <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                  <img src="elliott.jpg" class="card-img-top jerseyImagenes" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Jersey Ezekiel Elliott</h5>
+                    <p class="card-text">$139.99</p>
+                    <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                </div>
+                </div>
+              </div>
+            <div class="col mb-4">
+                <div class="card">
+                  <img src="lawrence.jpg" class="card-img-top jerseyImagenes" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Jersey Demarcus Lawrence</h5>
+                    <p class="card-text">$119.99</p>
+                    <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card">
+                  <img src="witten.jpg" class="card-img-top jerseyImagenes" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Jersey Jason Witten</h5>
+                    <p class="card-text">$129.99</p>
+                    <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                  <div class="card">
+                    <img src="aikman.jpg" class="card-img-top jerseyImagenes" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Jersey Troy Aikman</h5>
+                      <p class="card-text">$239.99</p>
+                      <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+            <!--Gorras-->          
+    <div>
+        <h1 class="titulos">Gorras</h1>
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col mb-3">
+              <div class="card">
+                <img src="gorra1.jpg" class="card-img-top jerseyImagenes" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Gorra 1</h5>
+                  <p class="card-text">$39.99</p>
+                  <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="gorra2.jpg" class="card-img-top jerseyImagenes" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Gorra 2</h5>
+                  <p class="card-text">$44.99</p>
+                  <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="gorra3.jpg" class="card-img-top jerseyImagenes" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Gorra 3</h5>
+                  <p class="card-text">$25.99</p>
+                  <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="gorra4.jpg" class="card-img-top jerseyImagenes" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Gorra 4</h5>
+                  <p class="card-text">$19.99</p>
+                  <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                  <img src="gorra5.jpg" class="card-img-top jerseyImagenes" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Gorra 5</h5>
+                    <p class="card-text">$32.99</p>
+                    <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                </div>
+                </div>
+              </div>
+            <div class="col mb-4">
+                <div class="card">
+                  <img src="gorra6.jpg" class="card-img-top jerseyImagenes" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Gorra 6</h5>
+                    <p class="card-text">$39.99</p>
+                    <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+
+          <!--Sudaderas-->          
+    <div>
+        <h1 class="titulos">Sudaderas</h1>
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col mb-3">
+              <div class="card">
+                <img src="sudadera1.jpg" class="card-img-top jerseyImagenes" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sudadera 1</h5>
+                  <p class="card-text">$69.99</p>
+                  <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="sudadera2.jpg" class="card-img-top jerseyImagenes" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sudadera 2</h5>
+                  <p class="card-text">$58.99</p>
+                  <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="sudadera3.jpg" class="card-img-top jerseyImagenes" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sudadera 3</h5>
+                  <p class="card-text">$63.99</p>
+                  <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="sudadera4.jpg" class="card-img-top jerseyImagenes" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sudadera 4</h5>
+                  <p class="card-text">$78.99</p>
+                  <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                  <img src="sudadera5.jpg" class="card-img-top jerseyImagenes" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sudadera 5</h5>
+                    <p class="card-text">$52.99</p>
+                    <button type="button" class="btn btn-primary" onclick="agregarCarrito()">Comprar</button>
+                </div>
+                </div>
+              </div>
+              </div>
+          </div>
+
+
+           <!--Carrito-->
+    <div>
+        <h1 class="titulos">Carrito</h1>
+
+
+
+
+    <div class="container">
+    <div class="row">
+          <table class="table col-sm-5">
+            <thead>
+              <tr>
+                <th scope="col-sm-1">#</th>
+                <th scope="col-sm-2">Foto</th>
+                <th scope="col-sm-1">Talla</th>
+                <th scope="col-sm-1">Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td><img class="imagenCarrito" src="https://fanatics.frgimages.com/FFImage/thumb.aspx?i=/productimages/_3878000/ff_3878094-484cf4b1aa07e5eaa0fb_full.jpg"></td>
+                <td>S</td>
+                <td>$119</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><img class="imagenCarrito" src="https://www.nfljersey.sale/images/throwback-game/men%27s-matt-ryan-atlanta-falcons-black-jersey-2020-throwback-game.jpg"></td>
+                <td>M</td>
+                <td>$119</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><img class="imagenCarrito" src="https://www.nfljersey.sale/images/color-rush-limited/men%27s-lamar-jackson-baltimore-ravens-purple-jersey-color-rush-limited.jpg"></td>
+                <td>G</td>
+                <td>$119</td>
+              </tr>
+              <th scope="row">4</th>
+                <td><img class="imagenCarrito" src="https://pbs.twimg.com/media/EVk-FZMWkAEVvYK.jpg"></td>
+                <td>S</td>
+                <td>$119</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td><img class="imagenCarrito" src="https://c.static-nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/jdxkdvlhwqdzsl8fiflr/chicago-bears-khalil-mack-mens-football-jersey-HgZvGr.jpg"></td>
+                <td>M</td>
+                <td>$119</td>
+              </tr>
+            </tbody>
+          </table>
+
+            <!--Pago-->
+
+            
+                <div class="col-offset-1 col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <p>Tienes un cupon??</p>
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Cupon" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button" id="cupon">Validar</button>
+                        </div>
+                      </div>
+                      <div>
+                          <div>
+                            <span>Sub-Total</span><span class="totalPrecio">$500</span>
+                         </div>
+                         <div>
+                             <span>Descuento</span><span class="totalPrecio">$50</span>
+                         </div>
+                         <div>
+                            <span>Iva</span><span class="totalPrecio">$72</span>
+                        </div>
+                        <div>
+                            <span>Total</span><span class="totalPrecio">$522</span>
+                        </div>
+                      <br><br>
+                    </div>
+                    <p>Datos de la Tarjeta</p>
+                    <div>
+                    <form>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control" placeholder="Nombre">
+                          </div>
+                          <div class="col-sm-6">
+                            <input type="text" class="form-control" placeholder="Apellido"><br>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <input type="number" class="form-control" placeholder="Numero de Tarjeta"><br>
+                          </div>
+                          <div class="col-sm-5">
+                            <input type="number" class="form-control" placeholder="MM/AA">
+                          </div>
+                          <div class="col-sm-5">
+                            <input type="number" class="form-control" placeholder="CVV"><br>
+                          </div>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" placeholder="Direccion"><br>
+                          </div>
+                          <div class="col-sm-5">
+                            <input type="number" class="form-control" placeholder="CP"><br>
+                          </div>
+                      </form>
+                    </div>
+
+                    <div>
+                    <button type="button" class="btn btn-primary" id="botonPagar">PAGAR</button>
+                    </div>    
+                </div>
+                  </div>
+                </div>
+              
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,52 @@
+.logo{
+    width: 200px;
+}
+nav{
+    background-color: #072B4F;
+}
+.nav-justified{
+    background-color: #072B4F;
+}
+.nav-link{
+    color: gray;
+    font-size: larger;
+}
+body {
+    background-image: url("pasto.jpg");
+    background-size: 300px;
+    background-repeat: repeat;
+}
+.btn-secondary{
+    color: grey;
+    background-color: #072B4F;
+}
+.jerseyImagenes{
+    width: 300px;
+}
+.titulos{
+    text-align: center;
+    background-color: grey;
+    color: #072B4F;
+}
+.btn-primary{
+    color: grey;
+    background-color: #072B4F;
+}
+
+.imagenCarrito{
+    width: 80px;
+}
+.totalPrecio{
+    float: right;
+}
+#botonPagar{
+    width: 300px;
+    align-self: center;
+}
+
+td{
+    color: white;
+}
+th{
+    color: white;
+}
