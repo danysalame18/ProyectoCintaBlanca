@@ -1,6 +1,5 @@
 
 var contaClicks = 0;
-var x = prueba
 
 function agregarCarrito(){
     var img1 = document.getElementById("imagenCar1");
@@ -8,4 +7,5 @@ function agregarCarrito(){
     contaClicks ++;
     img1.innerHTML =` <img src="sudadera5.jpg"/>`;
     pre1.innerHTML = "$52.99";
+    img1.style.Width = "300px";
 }
